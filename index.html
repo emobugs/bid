@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="fullpage">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>    
+        <section class="section s1">
+            <div class="sBox">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet  elit. Soluta, veritatis eum! Architecto fugit, accusantium harum recusandae quam suscipit quibusdam asperiores quaerat odio natus delectus illum eius dignissimos molestiae eaque tempora?</p>
+            </div>
+        </section>
+        <section class="section s2">
+            <div class="sBox">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet  elit. Porro consequuntur dicta nostrum reprehenderit autem quia quidem explicabo provident odio repellat, iusto pariatur ipsam nobis laudantium accusamus quisquam omnis placeat excepturi.</p>
+            </div>
+        </section>
+        <section class="section s3">
+            <div class="sBox">
+                <h2>Service</h2>
+                <p>Lorem ipsum dolor sit amet  elit. Ullam molestias eius, quas fugiat earum deleniti aliquam sit, repellat corrupti impedit debitis architecto nam aperiam ipsam labore et laudantium sint distinctio.</p>
+            </div>
+        </section>
+        <section class="section s5">
+            <div class="sBox">
+                <h2>Gallery</h2>
+                <p>Lorem ipsum dolor sit amet consect ng elit. Ullam voluptas consequatur commodi corporis amet assumenda eligendi vitae quas officia! Labore alias iure delectus voluptate ipsum maiores illo pariatur quos non?</p>
+            </div>
+        </section>
+        <section class="section s4">
+            <div class="sBox">
+                <h2>Contact</h2>
+                <p>Lorem ipsum dolor sit amet consect ng elit. Ullam voluptas consequatur commodi corporis amet assumenda eligendi vitae quas officia! Labore alias iure delectus voluptate ipsum maiores illo pariatur quos non?</p>
+            </div>
+        </section>
+        
+        <footer>BID 2021</footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new fullpage('#fullpage',{
+            // autoScrolling: true,
+            navigation: true,
+            anchors:['home','about','service','gallery','contact'],
+            navigationTooltips:['Home', 'About', 'Service','Gallery','Contact'],
+            scrollingSpeed: 1000,
+            loopBottom: true,
+            fitToSection: true,
+            // dragAndMove: true,
+            showActiveTooltip: true
+    });
+</script>
+</body>
+</html>

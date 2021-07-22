@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html,body{
+    /* overflow: hidden; */
+    height: 100vh;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+}
+
+nav.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 1000 !important;
+    min-height: 5vh;
+    width: 100%;
+    background-color: rgb(24, 18, 18);
+}
+
+.navbar ul{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    color: #fff;
+    font-size: 2rem;
+    transition:  color 300ms;
+}
+
+.navbar ul li a:hover{
+    color: orange;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem;
+    z-index: -1;
+    background-color: #000;
+}
+
+
+section .sBox{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.s1{
+    padding-top: 40px;
+}
+
+.section h2 {
+    padding-top: 5rem;
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.section p {
+    font-size: 1.4rem;
+}
+
+/* fullpage dots navigation */
+span{
+    border-radius: 0 !important;
+    background-color: #fff !important;
+}
+
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+}
