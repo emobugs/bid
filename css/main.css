@@ -52,13 +52,12 @@ html,body{
 
 section{
     height: 100vh;
-    position: static;
     scroll-snap-align: center;
     scroll-snap-stop: always;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 4rem;
+    align-items: center;
+    padding: 5rem 10rem;
     z-index: -1;
     background-color: #000;
 }
@@ -69,23 +68,32 @@ section .sBox{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     color: #fff;
 }
 
-.s1{
-    padding-top: 40px;
-}
 
 .section h2 {
-    padding-top: 5rem;
+    font-size: 8rem;
+    text-align: center;
+    margin-left: -1000px;
+    margin-bottom: 8rem;
+}
+
+.section p{
+    display: block;
+    width: 80%;
     font-size: 3rem;
-    padding: 1rem;
+    margin-left: 5000px;
     text-align: center;
 }
 
-.section p {
-    font-size: 1.4rem;
+.from-left{
+    animation: textFromLeft 2500ms 1 forwards ease;
+}
+
+.from-right{
+    animation: textFromRight 3000ms 1 forwards ease-out 1.2s;
 }
 
 /* fullpage dots navigation */
@@ -99,4 +107,25 @@ span{
 footer{
     text-align: center;
     padding: 10px;
+}
+
+
+/* animations */
+
+@keyframes textFromLeft {
+    0%{
+        margin-left: -4000px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
+
+@keyframes textFromRight {
+    0%{
+        margin-left: 5000px;
+    }
+    100%{
+        margin-left: 0;
+    }
 }
